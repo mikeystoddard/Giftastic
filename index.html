@@ -5,48 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GifTastic!</title>
-    <!--Adding in links to stylesheets and jquery code-->
+    <!--link css and Bootstrap-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <!--links for bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
-<!--Adding in header for the game-->
-<div class="container">
-<div class="jumbotron text-center">
-    <h1>Star Wars GIF Search!</h1>
-  </div>
+    <div class="container">
+        <div class="backgroundimage">
+        <div class="jumbotron text-center">
   
-  <!--Creating spaces to hold all the elements-->
-  <div class="row">
-      <!--space for buttons-->
-      <div class="col-md-12" id="gButtons"></div>
-      </div>
-  <!-- Add bootstrap search form -->
-  <div class="row">
-    <div class="col-md-12">
-  <form id="form">
-  <label for="user-search">Add your favorite Star Wars character!</label><br>
-  <!-- Input text box-->
-  <input type="text" id="user-search">
-  <!-- search button-->
-  <input id="submitButton" type="submit" value="Submit" class="btn btn-secondary">
-  </form>
+            <h1>Star Wars GIF Search!</h1>
+        </div>
     </div>
-  </div>
-  <!-- Empty space for all the GIFs -->
- <div class="row">
-     <div class="col-md-12" id="display-images"></div>
- </div>
-</div>
+        <div class="row">
 
-    <!--link in JS that links to js game file in assets folder-->
+            <div class="col-md-12" id="gButtons"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form id="form">
+                    <label for="user-search">Add your favorite Star Wars character!</label><br>
+                    <input type="text" id="user-search">
+                    <input id="submitButton" type="submit" value="Submit" class="btn btn-secondary">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="display-images"></div>
+        </div>
+    </div>
+
+<!--Link for app.js and jquery-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
